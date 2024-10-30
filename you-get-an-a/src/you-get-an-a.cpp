@@ -14,6 +14,7 @@ using namespace std;
 
 int main()
 {
+	//cout << "hello world" << endl;
 	Gradebook gradebook;
 
 	gradebook.add_student("Bob Bobberson", "ABC123");
@@ -29,5 +30,7 @@ int main()
 	gradebook.enter_grade("Jess Jesserson", "Quiz 1", 93);
 	gradebook.enter_grade("Bob Bobberson", "Lab 1", 0);
 
+
 	gradebook.report();
-}
+	cout << "end of program" << endl;
+ }

@@ -17,17 +17,16 @@ class Assignment
 private:
 	friend class Student;
 	string nameOfAssignment;
-	string id = "";
+	string id;
 	int grade = 0;
 	int max_grade = 0;
 public:
-	Assignment(string id, string assign, int grade, int max_grade)
+	Assignment(string assign, int max_grade)
 	{
-		this->id = id;
+		this->id = "";
 		this->nameOfAssignment = assign;
 		this->max_grade = max_grade;
-		this->grade = grade;
-	};
+	}
 	string getId()
 	{
 		return id;
@@ -35,7 +34,7 @@ public:
 	string getAssign()
 	{
 		return nameOfAssignment;
-	}
+	};
 	int getGrade()
 	{
 		return grade;
@@ -47,6 +46,10 @@ public:
 	void setGrade(int temp)
 	{
 		this->grade = temp;
+	}
+	void setId(string temp)
+	{
+		this->id = temp;
 	}
 };
 
